@@ -8,3 +8,14 @@ test('get book by id', async () => {
     console.log(response.data)
     expect(response.status).toEqual(200);
 })
+// Функція-обробник події
+function handleClick(event) {
+  console.log('Button was clicked!');
+  console.log(event.currentTarget);
+  event.stopPropagation();
+}
+
+document.getElementById('p').addEventListener('click', handleClick);
+document.getElementById('div').addEventListener('click', handleClick);
+document.getElementById('form').addEventListener('click', handleClick);
+document.getElementById('html').addEventListener('click', handleClick);

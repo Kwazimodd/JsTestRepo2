@@ -22,6 +22,8 @@ test('create product', async () => {
         });
     console.log(createProduct.data)
     expect(createProduct.status).toEqual(200)
+
+    expect(() => someFunction()).toThrow("Invalid Endpoint");
 })
 
 test('Create user', async() => {
