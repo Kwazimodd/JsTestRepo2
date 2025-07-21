@@ -19,7 +19,7 @@
   },
   "scripts": {
     "test": "jest",
-    "api_test": "npx jest book.test.js"
+    "api_tests": "npx jest book.test.js"
   },
   "dependencies": {
     "axios": "^1.10.0",
