@@ -1,5 +1,5 @@
 const axios = require('axios');
-const BookController = require('../controllers/BookController.js');
+const BookController = require('./BookController.js');
 
 controller = new BookController();
 
