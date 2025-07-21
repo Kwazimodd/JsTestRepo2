@@ -1,0 +1,32 @@
+{
+  "name": "myprivaterepofortesting",
+  "version": "1.0.0",
+  "description": "asdadasdasdasdasdsad",
+  "homepage": "https://github.com/danylo-diachenko/MyPrivateRepoForTesting#readme",
+  "bugs": {
+    "url": "https://github.com/danylo-diachenko/MyPrivateRepoForTesting/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danylo-diachenko/MyPrivateRepoForTesting.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "jest",
+    "actions": "npx jest api_requests/login.test.js && npx jest api_requests/actions.test.js"
+  },
+  "dependencies": {
+    "axios": "^1.10.0",
+    "jest": "^30.0.4"
+  },
+  "devDependencies": {
+    "@faker-js/faker": "^9.9.0",
+    "jest-html-reporters": "^3.1.7"
+  }
+}
