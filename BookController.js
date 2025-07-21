@@ -1,9 +1,8 @@
 const axios = require('axios');
-const jsonData = require('../env.json');
 
 module.exports = class BookController {
     async findBookById(id) {
-        return await axios.get(jsonData.baseUrl, {params: {book: id}});
+        return await axios.get(`https://demoqa.com/books`, {params: {book: id}});
     }
 
     async putBook(book) {
